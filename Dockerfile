@@ -1,8 +1,5 @@
 FROM ubuntu:latest
 
-#ENV http_proxy http://cache-adm.univ-artois.fr:8080/
-#ENV https_proxy https://cache-adm.univ-artois.fr:8080/
-
 RUN apt-get -y update && apt-get install -y wget zip \
     && mkdir instancescompet2017maintrack \
     && wget https://baldur.iti.kit.edu/sat-competition-2017/benchmarks/Main.zip \
